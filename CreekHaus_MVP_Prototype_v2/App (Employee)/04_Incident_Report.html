@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CreekHaus · Employee · Incident Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<script src="../assets/app.js"></script>
+</head>
+<body>
+<div class="stage">
+  <div class="stage-label">Employee App — Incident Report (orange · identical layout to Daily)</div>
+  <div class="phone phone--tall">
+    <div class="island"></div>
+    <div class="statusbar">
+      <span>9:41</span>
+      <span class="sb-right"><i data-i="sig"></i><i data-i="wifi"></i><i data-i="batt"></i></span>
+    </div>
+    <div class="phone-scroll">
+      <div class="app-header center" style="padding-top:14px">
+        <a class="back" href="01_Home.html"><i data-i="x"></i></a>
+        <h1 style="color:var(--orange-text)">Incident Report</h1>
+      </div>
+      <div class="scroll-pad">
+        <p class="prompt-line">Once the situation is handled, log what happened.</p>
+
+        <!-- unified input: identical component to Daily Update -->
+        <div class="compose">
+          <div class="field field--orange">
+            <textarea placeholder="Type or dictate here…"></textarea>
+            <div class="recbar"><span class="dot"></span>
+              <div class="wave"><i style="animation-delay:0s"></i><i style="animation-delay:.1s"></i><i style="animation-delay:.2s"></i><i style="animation-delay:.3s"></i><i style="animation-delay:.15s"></i><i style="animation-delay:.25s"></i><i style="animation-delay:.05s"></i><i style="animation-delay:.35s"></i><i style="animation-delay:.2s"></i><i style="animation-delay:.1s"></i></div>
+              <span class="time">0:00</span>
+            </div>
+            <div class="field-bar">
+              <button class="tap-ic" title="Record a voice note"><i data-i="mic"></i></button>
+              <span class="count">0/2000</span>
+            </div>
+          </div>
+          <div class="foot-note" style="justify-content:flex-start;padding:8px 2px 0"><i data-i="mic" style="width:14px;height:14px"></i> Tap the mic to record your voice · or type / use keyboard dictation</div>
+        </div>
+
+        <!-- category chips: the only addition vs. Daily (triage/filtering) -->
+        <div style="margin-top:18px">
+          <div class="sec-h" style="font-size:17px">What's this about?</div>
+          <div class="chips">
+            <button class="chip"><i data-i="guest"></i> Guest</button>
+            <button class="chip"><i data-i="chef"></i> Kitchen</button>
+            <button class="chip"><i data-i="shield"></i> Safety</button>
+            <button class="chip"><i data-i="wrench"></i> Maintenance</button>
+            <button class="chip"><i data-i="dots"></i> Other</button>
+          </div>
+        </div>
+
+        <div class="attach"><div class="icirc sm orange"><i data-i="paperclip"></i></div> Add photo or file <span class="opt">(optional)</span><span class="arr"><i data-i="arrow"></i></span></div>
+
+        <button class="btn orange" style="margin-top:16px">Submit Incident Report</button>
+        <div class="foot-note"><i data-i="lock" style="width:15px;height:15px"></i> Your report will be sent to the shift lead and management.</div>
+      </div>
+    </div>
+    <nav class="tabbar">
+      <a class="tab" href="01_Home.html"><i data-i="home"></i><span>Home</span></a>
+      <a class="tab" href="02_My_Shift.html"><i data-i="calcheck"></i><span>My Shift</span></a>
+      <button class="fab" title="Add daily update or incident report"><i data-i="plus"></i></button>
+      <a class="tab" href="05_Quick_Guide.html"><i data-i="book"></i><span>Guides</span></a>
+      <a class="tab" href="06_Profile.html"><i data-i="user"></i><span>Profile</span></a>
+    </nav>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CreekHaus · Employee · My Shift</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<script src="../assets/app.js"></script>
+</head>
+<body>
+<div class="stage">
+  <div class="stage-label">Employee App — My Shift</div>
+  <div class="phone phone--tall">
+    <div class="island"></div>
+    <div class="statusbar">
+      <span>9:41</span>
+      <span class="sb-right"><i data-i="sig"></i><i data-i="wifi"></i><i data-i="batt"></i></span>
+    </div>
+    <div class="phone-scroll">
+      <div class="app-header center" style="padding-top:14px">
+        <a class="back" href="01_Home.html"><i data-i="back"></i></a>
+        <h1>My Shift</h1>
+      </div>
+      <div class="scroll-pad">
+        <div class="row-date"><i data-i="cal" style="color:var(--green)"></i> Friday, June 12 · 8:00 AM – 4:00 PM</div>
+        <p class="subtle">Tap a task to mark it complete. Add anything not listed as a Daily Update below.</p>
+
+        <div data-list="checklist">
+        <div class="check">
+          <span class="box"></span>
+          <span class="ic"><i data-i="heater"></i></span>
+          <div class="body"><div class="t">Open patio heaters</div><div class="loc">Patio</div></div>
+          <span class="pill todo">To-Do</span>
+        </div>
+
+        <div class="check">
+          <span class="box"></span>
+          <span class="ic"><i data-i="keg"></i></span>
+          <div class="body"><div class="t">Check keg levels</div><div class="loc">Bar</div></div>
+          <span class="pill todo">To-Do</span>
+        </div>
+
+        <div class="check">
+          <span class="box"></span>
+          <span class="ic"><i data-i="napkin"></i></span>
+          <div class="body"><div class="t">Restock napkins &amp; condiments</div><div class="loc">Dining Room</div></div>
+          <span class="pill wip">In&nbsp;Progress</span>
+        </div>
+
+        <div class="check">
+          <span class="box"></span>
+          <span class="ic"><i data-i="restroom"></i></span>
+          <div class="body"><div class="t">Bathroom check</div><div class="loc">Front of House</div></div>
+          <span class="pill todo">To-Do</span>
+        </div>
+
+        <div class="check">
+          <span class="box"></span>
+          <span class="ic"><i data-i="clip"></i></span>
+          <div class="body"><div class="t">Confirm reservations</div><div class="loc">Host Stand</div></div>
+          <span class="pill todo">To-Do</span>
+        </div>
+
+        <div class="check done">
+          <span class="box"><i data-i="check"></i></span>
+          <span class="ic"><i data-i="guest"></i></span>
+          <div class="body"><div class="t">Guest follow-up</div><div class="loc">Service</div></div>
+          <span class="pill done">Done</span>
+        </div>
+        </div>
+
+        <a class="btn" href="03_Daily_Update.html" style="margin-top:18px"><i data-i="plus"></i> Add Daily Update</a>
+      </div>
+    </div>
+    <nav class="tabbar">
+      <a class="tab" href="01_Home.html"><i data-i="home"></i><span>Home</span></a>
+      <a class="tab active" href="02_My_Shift.html"><i data-i="calcheck"></i><span>My Shift</span></a>
+      <button class="fab" title="Add daily update or incident report"><i data-i="plus"></i></button>
+      <a class="tab" href="05_Quick_Guide.html"><i data-i="book"></i><span>Guides</span></a>
+      <a class="tab" href="06_Profile.html"><i data-i="user"></i><span>Profile</span></a>
+    </nav>
+  </div>
+</div>
+</body>
+</html>
