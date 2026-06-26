@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CreekHaus · Web · Shifts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<script src="../assets/app.js"></script>
+</head>
+<body>
+<div class="web"><div class="web-frame">
+  <aside class="sidebar">
+    <div class="brand">
+      <img class="emblem" src="../assets/emblem.png" alt="">
+      <img class="wm" src="../assets/wordmark_cream.png" alt="CreekHaus">
+    </div>
+    <a class="side-link" href="01_Dashboard.html"><i data-i="home"></i> Dashboard</a>
+    <a class="side-link" href="02_Team_Members.html"><i data-i="users"></i> Team Members</a>
+    <a class="side-link active" href="03_Shifts.html"><i data-i="calcheck"></i> Shifts</a>
+    <a class="side-link" href="05_Daily_Updates.html"><i data-i="filecheck"></i> Daily Updates</a>
+    <a class="side-link" href="04_Reports.html"><i data-i="file"></i> Reports</a>
+    <a class="side-link" href="#"><i data-i="clip"></i> Task Templates</a>
+    <div class="side-div"></div>
+    <a class="side-link" href="#"><i data-i="book"></i> Quick Guide Library</a>
+    <a class="side-link" href="#"><i data-i="settings"></i> Settings &amp; Permissions</a>
+  </aside>
+
+  <main class="web-main">
+    <div class="web-top">
+      <h1>Shifts</h1>
+      <div class="tr">
+        <span class="userchip"><span class="avatar sm">B</span><span class="who"><span class="n">Bahadour</span><span class="r">Admin</span></span></span>
+      </div>
+    </div>
+
+    <div class="flex" style="justify-content:space-between; margin-bottom:18px">
+      <span class="date-pick" data-cal><i data-i="cal"></i> <span class="cal-label">Fri, June 12, 2026</span> <i data-i="chevd" style="width:16px;height:16px"></i></span>
+      <button class="web-btn" data-open="createSheet"><i data-i="plus"></i> Create Shift</button>
+    </div>
+
+    <div class="tbl-card">
+      <table class="web-table">
+        <thead><tr><th>Shift</th><th>Time</th><th>Area / Focus</th><th>Assigned Team Members</th><th>Lead</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr class="clickable" data-sheet="shiftSheet" data-title="Morning Opening">
+            <td style="font-weight:600">Morning Opening</td><td>8:00 AM – 4:00 PM</td><td><span class="tag host">Host Stand</span></td>
+            <td><span class="assigned-faces"><span class="avatar sm">B</span><span class="avatar sm">S</span></span></td><td>Bahadour</td><td><span class="pill resolved">Fully Assigned</span></td>
+          </tr>
+          <tr class="clickable" data-sheet="shiftSheet" data-title="Afternoon Service">
+            <td style="font-weight:600">Afternoon Service</td><td>4:00 PM – 12:00 AM</td><td><span class="tag dining">Dining Room</span></td>
+            <td><span class="assigned-faces"><span class="avatar sm">A</span><span class="avatar sm">T</span></span></td><td>Alex</td><td><span class="pill resolved">Fully Assigned</span></td>
+          </tr>
+          <tr class="clickable" data-sheet="shiftSheet" data-title="Bar Support">
+            <td style="font-weight:600">Bar Support</td><td>4:00 PM – 12:00 AM</td><td><span class="tag bar">Bar</span></td>
+            <td><span class="assigned-faces"><span class="avatar sm">M</span></span></td><td>Mete</td><td><span class="pill open">Needs 1 More</span></td>
+          </tr>
+          <tr class="clickable" data-sheet="shiftSheet" data-title="Late Night Close">
+            <td style="font-weight:600">Late Night Close</td><td>10:00 PM – 2:00 AM</td><td><span class="tag patio">Patio / Support</span></td>
+            <td><span class="assigned-faces"><span class="avatar sm">J</span><span class="avatar sm">C</span></span></td><td>Stacey</td><td><span class="pill review">Ready</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="subtle" style="margin-top:12px">Click any shift to view it and change assignments. Click the date to switch days.</p>
+  </main>
+
+  <!-- shift detail / edit assignments -->
+  <div class="backdrop" id="shiftSheet">
+    <div class="sheet">
+      <div class="sh-head"><h3>Shift</h3><button class="close"><i data-i="x"></i></button></div>
+      <div class="sh-sub">View this shift and change who's assigned.</div>
+      <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div><div class="flbl">Time</div><input class="field-input" value="8:00 AM – 4:00 PM"></div>
+        <div><div class="flbl">Area / Focus</div><input class="field-input" value="Host Stand"></div>
+      </div>
+      <div class="flbl">Assigned team members</div>
+      <div class="people-edit">
+        <div class="pchip"><span class="avatar sm">B</span> Bahadour <button class="x"><i data-i="x"></i></button></div>
+        <div class="pchip"><span class="avatar sm">S</span> Stacey <button class="x"><i data-i="x"></i></button></div>
+      </div>
+      <div class="flbl">Add team member</div>
+      <div class="add-list">
+        <div class="add-row" data-name="Priya"><span class="avatar sm">P</span> Priya <span class="plus"><i data-i="plus"></i></span></div>
+        <div class="add-row" data-name="Marcus"><span class="avatar sm">M</span> Marcus <span class="plus"><i data-i="plus"></i></span></div>
+        <div class="add-row" data-name="Lena"><span class="avatar sm">L</span> Lena <span class="plus"><i data-i="plus"></i></span></div>
+      </div>
+      <div class="flbl">Shift lead</div>
+      <input class="field-input" value="Bahadour">
+      <button class="btn close" onclick="toast('Shift updated')" style="margin-top:6px">Save changes</button>
+    </div>
+  </div>
+
+  <!-- create shift -->
+  <div class="backdrop" id="createSheet">
+    <div class="sheet">
+      <div class="sh-head"><h3>Create shift</h3><button class="close"><i data-i="x"></i></button></div>
+      <div class="sh-sub">Add a new shift for the selected day.</div>
+      <div class="flbl">Shift name</div>
+      <input class="field-input" placeholder="e.g. Morning Opening">
+      <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div><div class="flbl">Start</div><input class="field-input" placeholder="8:00 AM"></div>
+        <div><div class="flbl">End</div><input class="field-input" placeholder="4:00 PM"></div>
+      </div>
+      <div class="flbl">Area / Focus</div>
+      <input class="field-input" placeholder="e.g. Bar, Dining Room, Patio">
+      <div class="flbl">Add team member</div>
+      <div class="people-edit"></div>
+      <div class="add-list">
+        <div class="add-row" data-name="Priya"><span class="avatar sm">P</span> Priya <span class="plus"><i data-i="plus"></i></span></div>
+        <div class="add-row" data-name="David"><span class="avatar sm">D</span> David <span class="plus"><i data-i="plus"></i></span></div>
+        <div class="add-row" data-name="Tricia"><span class="avatar sm">T</span> Tricia <span class="plus"><i data-i="plus"></i></span></div>
+      </div>
+      <button class="btn close" onclick="toast('Shift created')" style="margin-top:18px">Create shift</button>
+    </div>
+  </div>
+</div></div>
+</body>
+</html>
