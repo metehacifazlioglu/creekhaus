@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CreekHaus · Manager · Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<script src="../assets/app.js"></script>
+</head>
+<body>
+<div class="stage">
+  <div class="stage-label">Manager App — Dashboard</div>
+  <div class="phone phone--tall">
+    <div class="island"></div>
+    <div class="statusbar on-photo">
+      <span>9:41</span>
+      <span class="sb-right"><i data-i="sig"></i><i data-i="wifi"></i><i data-i="batt"></i></span>
+    </div>
+    <div class="phone-scroll">
+
+      <div class="hero" style="padding:58px 22px 22px">
+        <div class="greet" style="margin-top:46px">
+          <div class="small">Good Morning,</div>
+          <div class="big">Manager</div>
+          <div class="date">Friday, June 12</div>
+        </div>
+        <div class="wordmark" style="bottom:22px; display:flex; flex-direction:column; align-items:flex-end; gap:7px">
+          <img src="../assets/emblem.png" alt="" style="width:40px;height:40px;border-radius:50%;object-fit:cover;border:1px solid rgba(255,255,255,.15)">
+          <img src="../assets/wordmark_cream.png" alt="CreekHaus" style="height:19px;width:auto">
+        </div>
+      </div>
+
+      <div class="scroll-pad" style="margin-top:18px">
+        <!-- KEY CHANGE: today's shifts shown directly, not as a "3" count -->
+        <div class="flex" style="justify-content:space-between; margin:2px 2px 12px">
+          <div class="sec-h" style="margin:0">Today's Shifts</div>
+          <a class="muted" style="font-size:13.5px; color:var(--green)" href="02_Shift_Assignments.html">Manage →</a>
+        </div>
+
+        <a class="shiftline" href="02_Shift_Assignments.html">
+          <div class="icirc" style="background:var(--green);color:#fff"><i data-i="sun"></i></div>
+          <div class="body"><div class="t">Opening / Patio</div><div class="meta">8:00 AM – 4:00 PM · 2 assigned</div></div>
+          <div class="who"><span class="avatar sm">S</span><span class="avatar sm">B</span></div>
+        </a>
+        <a class="shiftline" href="02_Shift_Assignments.html">
+          <div class="icirc" style="background:var(--green);color:#fff"><i data-i="fork"></i></div>
+          <div class="body"><div class="t">Dining Room / Service</div><div class="meta">8:00 AM – 4:00 PM · 2 assigned</div></div>
+          <div class="who"><span class="avatar sm">A</span><span class="avatar sm">T</span></div>
+        </a>
+        <a class="shiftline" href="02_Shift_Assignments.html">
+          <div class="icirc" style="background:var(--green);color:#fff"><i data-i="martini"></i></div>
+          <div class="body"><div class="t">Bar / Beverage</div><div class="meta">4:00 PM – 12:00 AM · 2 assigned</div></div>
+          <div class="who"><span class="avatar sm">D</span><span class="avatar sm">S</span></div>
+        </a>
+        <a class="shiftline" href="02_Shift_Assignments.html">
+          <div class="icirc" style="background:var(--green);color:#fff"><i data-i="chef"></i></div>
+          <div class="body"><div class="t">Kitchen / Back of House</div><div class="meta">4:00 PM – 12:00 AM · 2 assigned</div></div>
+          <div class="who"><span class="avatar sm">J</span><span class="avatar sm">M</span></div>
+        </a>
+
+        <div class="stat-grid" style="margin-top:18px">
+          <a class="stat-card" href="#"><div class="icirc"><i data-i="users"></i></div><div class="num">28</div><div class="lab">Team Members</div></a>
+          <a class="stat-card" href="03_Reports.html"><div class="icirc orange"><i data-i="file"></i></div><div class="num">7</div><div class="lab">Reports to review</div></a>
+        </div>
+
+        <div class="sec-h" style="margin-top:22px">Quick Actions</div>
+        <div class="qa">
+          <a class="qa-card" href="02_Shift_Assignments.html"><div class="icirc sm"><i data-i="calcheck"></i></div> Shift Assignments</a>
+          <a class="qa-card" href="03_Reports.html"><div class="icirc sm"><i data-i="filecheck"></i></div> View Reports</a>
+          <a class="qa-card" href="04_Purchasing.html"><div class="icirc sm"><i data-i="dollar"></i></div> Purchasing</a>
+          <a class="qa-card" href="03_Reports.html"><div class="icirc sm"><i data-i="clip"></i></div> Daily Updates</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- manager nav: Home · Shifts · ⊕ · Reports · Profile -->
+    <nav class="tabbar">
+      <a class="tab active" href="01_Dashboard.html"><i data-i="home"></i><span>Home</span></a>
+      <a class="tab" href="02_Shift_Assignments.html"><i data-i="calcheck"></i><span>Shifts</span></a>
+      <button class="fab" title="Create"><i data-i="plus"></i></button>
+      <a class="tab" href="03_Reports.html"><i data-i="file"></i><span>Reports</span></a>
+      <a class="tab" href="#"><i data-i="user"></i><span>Profile</span></a>
+    </nav>
+  </div>
+</div>
+</body>
+</html>

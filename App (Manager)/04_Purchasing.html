@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CreekHaus · Manager · Purchasing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<script src="../assets/app.js"></script>
+</head>
+<body>
+<div class="stage">
+  <div class="stage-label">Manager App — Purchasing</div>
+  <div class="phone phone--tall">
+    <div class="island"></div>
+    <div class="statusbar">
+      <span>9:41</span>
+      <span class="sb-right"><i data-i="sig"></i><i data-i="wifi"></i><i data-i="batt"></i></span>
+    </div>
+    <div class="phone-scroll">
+      <div class="app-header center" style="padding-top:14px">
+        <a class="back" href="01_Dashboard.html"><i data-i="back"></i></a>
+        <h1>Purchasing</h1>
+      </div>
+      <div class="scroll-pad">
+        <p class="prompt-line">Record a purchase: choose the supplier, list what you bought, snap the receipt, and submit.</p>
+
+        <div class="step-head"><span class="num">1</span><span class="t">Choose Supplier</span></div>
+        <div class="supplier-list">
+          <div class="supplier-opt sel"><span class="radio"></span><div><div class="nm">Restaurant Depot</div><div class="sub">Dry goods · paper · bulk</div></div></div>
+          <div class="supplier-opt"><span class="radio"></span><div><div class="nm">Sysco</div><div class="sub">Produce · proteins · dairy</div></div></div>
+          <div class="supplier-opt"><span class="radio"></span><div><div class="nm">Orinda Farmers Market</div><div class="sub">Local produce · seasonal</div></div></div>
+          <div class="supplier-opt"><span class="radio"></span><div><div class="nm">Bay Beverage Co.</div><div class="sub">Beer · wine · spirits</div></div></div>
+        </div>
+
+        <div class="step-head"><span class="num">2</span><span class="t">Record Items</span></div>
+        <div style="display:flex; gap:8px; margin-bottom:12px">
+          <input class="field-input" data-item-input placeholder="Item (e.g. Napkins, case)" style="flex:1; margin-bottom:0">
+          <input class="field-input" data-qty-input placeholder="Qty" style="width:74px; margin-bottom:0">
+          <button class="btn-inline go" data-add-item style="flex:0 0 auto"><i data-i="plus"></i></button>
+        </div>
+        <div data-item-list>
+          <div class="pitem"><span class="nm">Cocktail napkins</span><span class="qty">4 cases</span><button class="x"><i data-i="x"></i></button></div>
+          <div class="pitem"><span class="nm">Lemons</span><span class="qty">2 cases</span><button class="x"><i data-i="x"></i></button></div>
+          <div class="pitem"><span class="nm">To-go containers</span><span class="qty">1 case</span><button class="x"><i data-i="x"></i></button></div>
+        </div>
+
+        <div class="step-head"><span class="num">3</span><span class="t">Capture Receipt</span></div>
+        <div class="receipt-drop">
+          <div class="ic"><i data-i="camera"></i></div>
+          <div style="font-weight:600; color:var(--ink)">Photograph or upload receipt</div>
+          <div style="font-size:12.5px">Tap to use camera or choose a file</div>
+        </div>
+
+        <div class="flbl" style="margin-top:16px">Notes (optional)</div>
+        <input class="field-input" placeholder="e.g. Substituted brand on napkins — out of stock">
+
+        <button class="btn" data-purchase-submit style="margin-top:8px">Submit Purchase</button>
+        <div class="foot-note"><i data-i="lock" style="width:15px;height:15px"></i> Purchase records are saved to the admin portal for review.</div>
+      </div>
+    </div>
+    <nav class="tabbar">
+      <a class="tab" href="01_Dashboard.html"><i data-i="home"></i><span>Home</span></a>
+      <a class="tab" href="02_Shift_Assignments.html"><i data-i="calcheck"></i><span>Shifts</span></a>
+      <button class="fab" title="Create"><i data-i="plus"></i></button>
+      <a class="tab" href="03_Reports.html"><i data-i="file"></i><span>Reports</span></a>
+      <a class="tab" href="#"><i data-i="user"></i><span>Profile</span></a>
+    </nav>
+  </div>
+</div>
+</body>
+</html>

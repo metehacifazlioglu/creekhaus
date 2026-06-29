@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CreekHaus · Web · Task Submissions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<script src="../assets/app.js"></script>
+</head>
+<body>
+<div class="web"><div class="web-frame">
+  <aside class="sidebar">
+    <div class="brand">
+      <img class="emblem" src="../assets/emblem.png" alt="">
+      <img class="wm" src="../assets/wordmark_cream.png" alt="CreekHaus">
+    </div>
+    <a class="side-link" href="01_Dashboard.html"><i data-i="home"></i> Dashboard</a>
+    <a class="side-link" href="02_Team_Members.html"><i data-i="users"></i> Team Members</a>
+    <a class="side-link" href="03_Shifts.html"><i data-i="calcheck"></i> Shifts</a>
+    <a class="side-link" href="05_Daily_Updates.html"><i data-i="filecheck"></i> Daily Updates</a>
+    <a class="side-link" href="04_Reports.html"><i data-i="file"></i> Reports</a>
+    <a class="side-link active" href="06_Task_Submissions.html"><i data-i="calcheck"></i> Task Submissions</a>
+    <a class="side-link" href="07_Purchasing.html"><i data-i="dollar"></i> Purchasing</a>
+    <div class="side-div"></div>
+    <a class="side-link" href="#"><i data-i="book"></i> Quick Guide Library</a>
+    <a class="side-link" href="#"><i data-i="settings"></i> Settings &amp; Permissions</a>
+  </aside>
+
+  <main class="web-main">
+    <div class="web-top">
+      <h1>Task Submissions</h1>
+      <div class="tr">
+        <span class="date-pick" data-cal><i data-i="cal"></i> <span class="cal-label">Fri, June 12, 2026</span> <i data-i="chevd" style="width:16px;height:16px"></i></span>
+        <span class="userchip"><span class="avatar sm">B</span><span class="who"><span class="n">Bahadour</span><span class="r">Admin</span></span></span>
+      </div>
+    </div>
+
+    <div class="tabs-line">
+      <span class="tline active">All</span>
+      <span class="tline">Completed</span>
+      <span class="tline">Needs Follow-Up</span>
+    </div>
+    <p class="subtle" style="margin-top:10px">The record of work completed through the app — the operational memory that used to live in verbal handoffs. Check one off once you've reviewed it.</p>
+
+    <div class="tbl-card" style="margin-top:6px">
+      <table class="web-table">
+        <thead><tr><th style="width:44px"></th><th class="issue">Task</th><th>Submitted By</th><th>Time</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><button class="mini-check"></button></td>
+            <td class="issue">Bar Closing</td>
+            <td><span class="subm"><span class="avatar sm">D</span><span class="sm-meta"><b>David</b><span>Beer Tender</span></span></span></td>
+            <td>10:34 PM</td>
+            <td><span class="pill followup">Needs Follow-Up</span></td>
+          </tr>
+          <tr>
+            <td><button class="mini-check"></button></td>
+            <td class="issue">Opening / Patio Setup</td>
+            <td><span class="subm"><span class="avatar sm">S</span><span class="sm-meta"><b>Stacey</b><span>FOH Lead</span></span></span></td>
+            <td>8:12 AM</td>
+            <td><span class="pill resolved">Completed</span></td>
+          </tr>
+          <tr>
+            <td><button class="mini-check"></button></td>
+            <td class="issue">Kitchen Open</td>
+            <td><span class="subm"><span class="avatar sm">J</span><span class="sm-meta"><b>John</b><span>BOH</span></span></span></td>
+            <td>7:50 AM</td>
+            <td><span class="pill resolved">Completed</span></td>
+          </tr>
+          <tr>
+            <td><button class="mini-check"></button></td>
+            <td class="issue">Restroom Reset</td>
+            <td><span class="subm"><span class="avatar sm">M</span><span class="sm-meta"><b>Marcus</b><span>FOH</span></span></span></td>
+            <td>2:30 PM</td>
+            <td><span class="pill resolved">Completed</span></td>
+          </tr>
+          <tr class="reviewed">
+            <td><button class="mini-check on"><i data-i="check"></i></button></td>
+            <td class="issue">Dining Room Reset</td>
+            <td><span class="subm"><span class="avatar sm">T</span><span class="sm-meta"><b>Tricia</b><span>Dining</span></span></span></td>
+            <td>1:05 PM</td>
+            <td><span class="pill resolved">Completed</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="tbl-foot">1–5 of 14 submissions <span class="more">View all <i data-i="arrow"></i></span></div>
+    </div>
+  </main>
+</div></div>
+</body>
+</html>

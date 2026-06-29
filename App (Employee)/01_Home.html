@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CreekHaus · Employee · Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<script src="../assets/app.js"></script>
+</head>
+<body>
+<div class="stage">
+  <div class="stage-label">Employee App — Home</div>
+  <div class="phone phone--tall">
+    <div class="island"></div>
+    <div class="statusbar on-photo">
+      <span>9:41</span>
+      <span class="sb-right"><i data-i="sig"></i><i data-i="wifi"></i><i data-i="batt"></i></span>
+    </div>
+    <div class="phone-scroll">
+
+      <div class="hero hero--mini">
+        <div class="brandlock">
+          <img class="emblem" src="../assets/emblem.png" alt="">
+          <img class="wm" src="../assets/wordmark_cream.png" alt="CreekHaus">
+        </div>
+        <div class="greet">
+          <div class="big">Hello, Bahadour</div>
+          <div class="date">Friday, June 12</div>
+        </div>
+      </div>
+
+      <div class="scroll-pad" style="margin-top:18px">
+        <div class="cards-2">
+          <a class="card action-card compact" href="02_My_Shift.html">
+            <div class="icirc"><i data-i="calcheck"></i></div>
+            <div class="ttl">My Shift</div>
+            <span class="arr"><i data-i="arrow"></i></span>
+          </a>
+          <a class="card action-card compact" href="03_Daily_Update.html">
+            <div class="icirc"><i data-i="edit"></i></div>
+            <div class="ttl">Daily Update</div>
+            <span class="arr"><i data-i="arrow"></i></span>
+          </a>
+          <a class="card action-card compact" href="04_Incident_Report.html">
+            <div class="icirc orange"><i data-i="alert"></i></div>
+            <div class="ttl">Incident Report</div>
+            <span class="arr"><i data-i="arrow"></i></span>
+          </a>
+          <a class="card action-card compact" href="05_Quick_Guide.html">
+            <div class="icirc"><i data-i="book"></i></div>
+            <div class="ttl">Quick Guide</div>
+            <span class="arr"><i data-i="arrow"></i></span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- standardized bottom nav: Home · My Shift · ⊕ · Guides · Profile -->
+    <nav class="tabbar">
+      <a class="tab active" href="01_Home.html"><i data-i="home"></i><span>Home</span></a>
+      <a class="tab" href="02_My_Shift.html"><i data-i="calcheck"></i><span>My Shift</span></a>
+      <button class="fab" title="Add daily update or incident report"><i data-i="plus"></i></button>
+      <a class="tab" href="05_Quick_Guide.html"><i data-i="book"></i><span>Guides</span></a>
+      <a class="tab" href="06_Profile.html"><i data-i="user"></i><span>Profile</span></a>
+    </nav>
+  </div>
+</div>
+</body>
+</html>
